@@ -6,7 +6,7 @@ public class Wall implements INotMoving {
 private Image sprite;
 private int Xlocation;
 private int YLocation;
-private location location = new location(this.Xlocation,this.YLocation);
+private location location = new location(Xlocation,YLocation);
 
 public Wall(){
 }

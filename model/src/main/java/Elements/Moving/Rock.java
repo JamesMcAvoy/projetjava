@@ -11,6 +11,7 @@ private int YLocation;
 private int speed;	
 private Image sprite;
 private Direction direction;
+
 public Rock(){
 	this.location = new location(Xlocation,YLocation);
 	this.hit = false;
