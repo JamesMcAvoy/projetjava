@@ -8,7 +8,7 @@ private int Xlocation;
 private int YLocation;
 private location location = new location(this.Xlocation,this.YLocation);
 
-public Wall(Image sprite, location location){
+public Wall(){
 }
 
 	@Override
