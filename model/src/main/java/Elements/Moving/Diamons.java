@@ -2,98 +2,105 @@ package Elements.Moving;
 
 import java.awt.Image;
 
-public class Diamons implements IMooving {
-private location location;
-private	int Xlocation;
-private int YLocation;	
-private  int speed ;	
-private Image sprite;
-private Direction direction;
-private boolean hit;
+import Factory.Block;
+import Factory.Location;
 
-public Diamons(){
-	this.setLocation(new location(this.Xlocation,this.YLocation));
-	this.hit = false;
-	this.direction = null;
-	this.speed = 1;
-}
+public class Diamons extends Block implements IMooving {
+	
+	protected Location location;
+	protected Image sprite;
+	protected boolean hit;
+	protected Direction direction;
+	protected int speed;
+
 	@Override
 	public Direction getDirection() {
-		return this.direction;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public void setDirection(Direction direction) {
-		this.direction = direction;
+		// TODO Auto-generated method stub
 
-	}
-
-	@Override
-	public Image getsprite() {
-		return this.sprite;
 	}
 
 	@Override
 	public void move() {
+		// TODO Auto-generated method stub
 
-	}
-
-	@Override
-	public boolean breakable() {
-		return true;
-	}
-
-	@Override
-	public boolean convertible() {
-		return false;
-	}
-
-	@Override
-	public int getspeed() {
-		return this.speed;
 	}
 
 	@Override
 	public void moveLeft() {
-		this.setDirection(Direction.LEFT);
+		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void moveRight() {
-		this.setDirection(Direction.RIGHT);
+		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void moveUp() {
-		this.setDirection(Direction.UP);
+		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void moveDown() {
-		this.setDirection(Direction.DOWN);
+		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	public Image getsprite() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Location getLocation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setLocation(Location location) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean breakable() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean convertible() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int getspeed() {
+		// TODO Auto-generated method stub
+		return this.speed;
 	}
 
 	@Override
 	public boolean gethit() {
-		return this.hit;
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	@Override
 	public void sethit(boolean hit) {
-		this.hit = hit;
+		// TODO Auto-generated method stub
 
-	}
-	@Override
-	public location getLocation() {
-		return this.location;
-	}
-	@Override
-	public void setLocation(location location) {
-		this.location = location;
 	}
 
 }

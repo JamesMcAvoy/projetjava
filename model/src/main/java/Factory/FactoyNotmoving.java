@@ -1,7 +1,6 @@
 package Factory;
 
-
-import Elements.NotMoving.Magicwall;
+import Elements.NotMoving.MagicWall;
 import Elements.NotMoving.Mud;
 import Elements.NotMoving.Wall;
 
@@ -15,7 +14,7 @@ public class FactoyNotmoving extends ObjectFactory {
 	 return (new Wall());
 	}
 	
-	public Magicwall createMagicwall(){
-	return (new Magicwall());
+	public MagicWall createMagicwall(){
+	return (new MagicWall());
 	}
 }

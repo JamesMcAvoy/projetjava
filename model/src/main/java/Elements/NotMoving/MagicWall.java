@@ -5,8 +5,7 @@ import java.awt.Image;
 import Factory.Block;
 import Factory.Location;
 
-public class Wall extends Block implements INotMoving {
-	
+public class MagicWall extends Block implements INotMoving {
 	protected Location location;
 	protected Image sprite;
 	protected boolean hit;
