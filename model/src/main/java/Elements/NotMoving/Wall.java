@@ -13,55 +13,49 @@ public class Wall extends Block implements INotMoving {
 
 	@Override
 	public Location getlocation() {
-		// TODO Auto-generated method stub
-		return null;
+		return location;
 	}
 
 	@Override
 	public void setlocation(Location location) {
-		// TODO Auto-generated method stub
+		this.location = location;
 
 	}
 
 	@Override
 	public Image getsprite() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Location getLocation() {
-		// TODO Auto-generated method stub
-		return null;
+		return location;
 	}
 
 	@Override
 	public void setLocation(Location location) {
-		// TODO Auto-generated method stub
+		this.location = location;
 
 	}
 
 	@Override
 	public boolean breakable() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean convertible() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean gethit() {
-		// TODO Auto-generated method stub
-		return false;
+		return hit;
 	}
 
 	@Override
 	public void sethit(boolean hit) {
-		// TODO Auto-generated method stub
+		this.hit = hit;
 
 	}
 
