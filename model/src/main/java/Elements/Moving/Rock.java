@@ -1,39 +1,18 @@
 package Elements.Moving;
 
 import java.awt.Image;
-import java.io.File;
 
-public class Rock implements IMooving {
-private boolean hit;
-private location location;
-private	int Xlocation;
-private int YLocation;	
-private int speed;	
-private Image sprite;
-private Direction direction;
-public Rock(){
-	this.location = new location(Xlocation,YLocation);
-	this.hit = false;
-	this.speed = 1;
-	this.direction = null;
-}
-	@Override
-	public Direction getDirection() {
-		// TODO Auto-generated method stub
-		return this.direction;
-	}
+import Factory.Block;
+import Factory.Location;
 
-	@Override
-	public void setDirection(Direction direction) {
-		this.direction = direction;
 
-	}
-
-	@Override
-	public Image getsprite() {
-		// TODO Auto-generated method stub
-		return this.sprite;
-	}
+public class Rock extends Block implements IMooving {
+	
+	protected Location location;
+	protected Image sprite;
+	protected boolean hit;
+	protected Direction direction;
+	protected int speed;
 
 	@Override
 	public void move() {
@@ -42,9 +21,57 @@ public Rock(){
 	}
 
 	@Override
+	public void moveLeft() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void moveRight() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void moveUp() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void moveDown() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Image getsprite() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Location getLocation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setLocation(Location location) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean breakable() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
 	public boolean convertible() {
 		// TODO Auto-generated method stub
-		return true;
+		return false;
 	}
 
 	@Override
@@ -54,48 +81,26 @@ public Rock(){
 	}
 
 	@Override
-	public void moveLeft() {
-		this.setDirection(Direction.LEFT);
-
-	}
-
-	@Override
-	public void moveRight() {
-		this.setDirection(Direction.RIGHT);
-
-	}
-
-	@Override
-	public void moveUp() {
-		this.setDirection(null);
-
-	}
-
-	@Override
-	public void moveDown() {
-		this.setDirection(Direction.DOWN);
-
-	}
-	@Override
 	public boolean gethit() {
-		return this.hit;
+		return false;
 	}
+
 	@Override
 	public void sethit(boolean hit) {
-		this.hit = true;
+		this.hit = hit;
+
 	}
+
 	@Override
-	public location getLocation() {
-		return this.location;
-	}
-	@Override
-	public void setLocation(location location) {
-		this.location = location;
-	}
-	@Override
-	public boolean breakable() {
+	public Direction getDirection() {
 		// TODO Auto-generated method stub
-		return false;
+		return this.direction;
+	}
+
+	@Override
+	public void setDirection(Direction direction) {
+		// TODO Auto-generated method stub
+		this.direction = direction;
 	}
 
 }

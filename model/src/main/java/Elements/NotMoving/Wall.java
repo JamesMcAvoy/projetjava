@@ -2,36 +2,61 @@ package Elements.NotMoving;
 
 import java.awt.Image;
 
-public class Wall implements INotMoving {
-private Image sprite;
-private int Xlocation;
-private int YLocation;
-private location location = new location(this.Xlocation,this.YLocation);
+import Factory.Block;
+import Factory.Location;
 
-public Wall(Image sprite, location location){
-}
+public class Wall extends Block implements INotMoving {
+	
+	protected Location location;
+	protected Image sprite;
+	protected boolean hit;
 
 	@Override
-	public boolean breakable() {
-		// TODO Auto-generated method stub
-		return false;
+	public Location getlocation() {
+		return location;
+	}
+
+	@Override
+	public void setlocation(Location location) {
+		this.location = location;
+
 	}
 
 	@Override
 	public Image getsprite() {
-		// TODO Auto-generated method stub
-		return this.sprite;
+		return null;
 	}
 
 	@Override
-	public location getlocation() {
-		// TODO Auto-generated method stub
-		return this.location;
+	public Location getLocation() {
+		return location;
 	}
 
 	@Override
-	public void setlocation(location location) {
-		location= this.location; 
+	public void setLocation(Location location) {
+		this.location = location;
+
+	}
+
+	@Override
+	public boolean breakable() {
+		return false;
+	}
+
+	@Override
+	public boolean convertible() {
+		return false;
+	}
+
+	@Override
+	public boolean gethit() {
+		return hit;
+	}
+
+	@Override
+	public void sethit(boolean hit) {
+		this.hit = hit;
+
 	}
 
 }

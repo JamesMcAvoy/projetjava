@@ -1,97 +1,98 @@
 package Elements.Moving;
 
 import java.awt.Image;
-import java.io.File;
 
+import Factory.Location;
 
-
-public class Player implements IMooving {
-private location location;
-private	int Xlocation;
-private int YLocation;	
-private  int speed ;	
-private Image sprite;
-private Direction direction;
-private boolean hit;
-
-public Player(){
-	this.setLocation(new location(this.Xlocation,this.YLocation));
-	this.hit = false;
-	this.direction = null;
-	this.speed = 2;
-}
+public class Player extends Entity implements IMooving {
+	protected Location location;
+	protected Image sprite;
+	protected boolean hit;
+	protected Direction direction;
+	protected int speed;
 
 	@Override
 	public Direction getDirection() {
-		return this.direction;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public void setDirection(Direction direction) {
-
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public void move() {
-
-	}
-
-	@Override
-	public boolean convertible() {
-		return false;
-	}
-
-	@Override
-	public int getspeed() {
-		return this.speed;
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public void moveLeft() {
-		this.setDirection(Direction.LEFT);
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public void moveRight() {
-		this.setDirection(Direction.RIGHT);
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public void moveUp() {
-		this.setDirection(Direction.UP);
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public void moveDown() {
-		this.setDirection(Direction.DOWN);
+		// TODO Auto-generated method stub
+		
 	}
+
 	@Override
-	public location getLocation() {
-		return this.location;
+	public Location getLocation() {
+		// TODO Auto-generated method stub
+		return null;
 	}
+
 	@Override
-	public void setLocation(location location) {
-		this.location = location;
+	public void setLocation(Location location) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public Image getsprite() {
-		return this.sprite;
-	}
-
-	@Override
-	public boolean gethit() {
-		return this.hit;
-	}
-
-	@Override
-	public void sethit(boolean hit) {
-		this.hit = hit;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public boolean breakable() {
-		return true;
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean convertible() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean gethit() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void sethit(boolean hit) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

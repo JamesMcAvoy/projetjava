@@ -2,33 +2,68 @@ package Elements.NotMoving;
 
 import java.awt.Image;
 
-public class Mud implements INotMoving {
 
-private Image sprite;
-private int Xlocation;
-private int YLocation;
-private location location = new location(this.Xlocation,this.YLocation);
+import Factory.Block;
+import Factory.Location;
 
-	
-    public Mud(){}
+public class Mud extends Block implements INotMoving {
+protected Location location;
+protected Image sprite;
+protected boolean hit;
+
+
+	@Override
+	public Location getlocation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setlocation(Location location) {
+		// TODO Auto-generated method stub
+
+	}
 
 	@Override
 	public Image getsprite() {
-		return this.sprite;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
-	public location getlocation() {
-		return this.location;
+	public Location getLocation() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
-	public void setlocation(location location) {
-		this.location = location;
+	@Override
+	public void setLocation(Location location) {
+		// TODO Auto-generated method stub
+
 	}
 
 	@Override
 	public boolean breakable() {
-		return true;
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean convertible() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean gethit() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void sethit(boolean hit) {
+		// TODO Auto-generated method stub
+
 	}
 
 }
