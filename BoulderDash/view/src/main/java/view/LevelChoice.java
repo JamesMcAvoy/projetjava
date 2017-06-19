@@ -15,7 +15,7 @@ public class LevelChoice implements ItemListener{
 	public void itemStateChanged(ItemEvent e) {
 		
 		
-	    System.out.println("événement déclenché sur : " + Menu.getScroll().getSelectedItem());
+	    System.out.println("Evénement déclenché sur : " + Menu.getScroll().getSelectedItem());
 		
 		
 	}

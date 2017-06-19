@@ -24,7 +24,7 @@ public class Menu extends JFrame implements ActionListener{
 	  
 	  
 	  public Menu(){
-		  this.setTitle("Boulder Dash");
+		  this.setTitle("Boulder Dash Menu");
 		    this.setSize(400, 550);
 		    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    this.setLocationRelativeTo(null);
