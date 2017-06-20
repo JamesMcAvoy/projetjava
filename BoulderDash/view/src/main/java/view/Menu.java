@@ -18,51 +18,56 @@ import javax.swing.JRadioButton;
 public class Menu extends JFrame implements ActionListener{
 	  
 	  private JPanel container = new JPanel();
-	  private static JComboBox scroll = new JComboBox();
-	  private JLabel label = new JLabel("Level");
-	  private JButton play = new JButton("play");
+	  private JButton Level1 = new JButton("Level 1");
+	  private JButton Level2 = new JButton("Level 2");
+	  private JButton Level3 = new JButton("Level 3");
+	  private JButton Level4 = new JButton("Level 4");
+	  private JButton Level5 = new JButton("Level 5");
+	  private JFrame frame = new JFrame ("test");
 	  
 	  
 	  public Menu(){
-		  this.setTitle("Boulder Dash Menu");
-		    this.setSize(400, 550);
-		    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		    this.setLocationRelativeTo(null);
+		  this.setTitle("Boulder Dash");
+		  this.setSize(400, 550);
+		  this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		  this.setLocationRelativeTo(null);
 		    
-		    container.setBackground(Color.white);
-		    container.setLayout(new BorderLayout());
+		  container.setBackground(Color.white);
+		  frame.setLayout(new BorderLayout());
 		    
-		    getScroll().setPreferredSize(new Dimension(100, 25));
-
-		    JPanel pane = new JPanel();
-		    JPanel p2 = new JPanel();
-		 
-		    JLabel image = new JLabel (new ImageIcon( "/Users/aymeric/desktop/projet/java/boulder_dash_Menu.jpg"));
+		
 		    
-		    p2.add(image);
 		    
-		    pane.add(label);
-		    pane.add(getScroll());
-		    container.add(pane, BorderLayout.NORTH);
-		    container.add(p2, BorderLayout.CENTER);
+		  JPanel p2 = new JPanel();
+		  JLabel image = new JLabel (new ImageIcon( "/Users/aymeric/desktop/projet/java/boulder_dash_Menu.jpg"));
 		    
-		 
+		  p2.add(image);
+		  container.add(p2, BorderLayout.CENTER);
 		    
-		    play.addActionListener(this);
-		    container.add(play, BorderLayout.SOUTH);
-		    
-		    this.setContentPane(container);
-		    
-		    getScroll().addItem("Level 1");
-		    getScroll().addItem("Level 2");
-		    getScroll().addItem("Level 3");
-		    getScroll().addItem("Level 4");
-		    getScroll().addItem("Level 5");
-		    
-		    getScroll().addItemListener(new LevelChoice());
-		   
-		    
-		    this.setVisible(true);
+	
+		  container.add(Level1, BorderLayout.SOUTH);
+		  Level1.setPreferredSize(new Dimension(100, 25));
+		  Level1.addActionListener(this);
+		     
+		  container.add(Level2, BorderLayout.SOUTH);
+		  Level2.setPreferredSize(new Dimension (100, 25));
+		  Level2.addActionListener(this);
+			  
+		  container.add(Level3, BorderLayout.SOUTH);
+		  Level3.setPreferredSize(new Dimension (100, 25));
+		  Level3.addActionListener(this);
+			  
+		  container.add(Level4, BorderLayout.SOUTH);
+		  Level4.setPreferredSize(new Dimension (100, 25));
+		  Level4.addActionListener(this);
+			  
+		  container.add(Level5, BorderLayout.SOUTH);
+		  Level5.setPreferredSize(new Dimension (100, 25));
+		  Level5.addActionListener(this);
+			  
+   
+		  this.setContentPane(container);
+		  this.setVisible(true);
 	  }
 	  
 	  public void Level1(){
@@ -74,32 +79,92 @@ public class Menu extends JFrame implements ActionListener{
 		    container.setBackground(Color.GRAY);
 		    this.setVisible(true); 
 	  }
+	  public void Level2(){
+		  JFrame l1 = new JFrame();
+		  	this.setTitle("Boulder Dash");
+		    this.setSize(650, 500);
+		    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		    this.setLocationRelativeTo(null);
+		    container.setBackground(Color.green);
+		    this.setVisible(true); 
+	  }
+	  public void Level3(){
+		  JFrame l1 = new JFrame();
+		  	this.setTitle("Boulder Dash");
+		    this.setSize(650, 500);
+		    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		    this.setLocationRelativeTo(null);
+		    container.setBackground(Color.BLUE);
+		    this.setVisible(true); 
+	  }
+	  public void Level4(){
+		  JFrame l1 = new JFrame();
+		  	this.setTitle("Boulder Dash");
+		    this.setSize(650, 500);
+		    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		    this.setLocationRelativeTo(null);
+		    container.setBackground(Color.red);
+		    this.setVisible(true); 
+	  }
+	  public void Level5(){
+		  JFrame l1 = new JFrame();
+		  	this.setTitle("Boulder Dash");
+		    this.setSize(650, 500);
+		    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		    this.setLocationRelativeTo(null);
+		    container.setBackground(Color.orange);
+		    this.setVisible(true); 
+	  }
 	 
 	  
 	  
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource() == play){
-			play.setEnabled(false);
+		if (e.getSource() == Level1){
+			Level1.setEnabled(false);
 		
 			this.setVisible(false);
 			container.removeAll();
 			Level1();
 			validate();
-			
 			}
-			
 		
+		else if (e.getSource() == Level2){
+			Level2.setEnabled(false);
+		
+			this.setVisible(false);
+			container.removeAll();
+			Level2();
+			validate();
+		}
+		else if (e.getSource() == Level3){
+			Level3.setEnabled(false);
+		
+			this.setVisible(false);
+			container.removeAll();
+			Level3();
+			validate();
+		}
+		else if (e.getSource() == Level4){
+			Level4.setEnabled(false);
+		
+			this.setVisible(false);
+			container.removeAll();
+			Level4();
+			validate();
+		}
+		else if (e.getSource() == Level5){
+			Level5.setEnabled(false);
+		
+			this.setVisible(false);
+			container.removeAll();
+			Level5();
+			validate();
+		}
 	}
 
-	public static JComboBox getScroll() {
-		return scroll;
-	}
 
-	public void setScroll(JComboBox scroll) {
-		this.scroll = scroll;
-	} 
 	
 	  
 }
