@@ -14,7 +14,7 @@
 
 [- Aymeric](https://exia.cesi.fr)<img src= "http://i36.photobucket.com/albums/e12/thomasbuet/v_lemoine_1476883124266-jpg_zpsipnrpmmv.jpeg">
 	
-    Plateforme de développement : macOS Sierra 10.12.4
+    Plateforme de développement : macOS Sierra 10.12.3
 
 [- Antoine](https://exia.cesi.fr)<img src= "http://i36.photobucket.com/albums/e12/thomasbuet/v_robert_1476883745725-jpg_zpsbuamtwti.jpeg">
 	
