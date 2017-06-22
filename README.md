@@ -3,7 +3,7 @@
 # BoulderDash
 
 
-![]({{site.baseurl}}/https://gamefaqs.akamaized.net/box/0/2/1/2021_front.jpg)
+[<img src="https://gamefaqs.akamaized.net/box/0/2/1/2021_front.jpg">]
 
 
 ## THE DREAM TEAM
