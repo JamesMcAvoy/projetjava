@@ -1,7 +1,9 @@
 
 # Java project:
+Le code final se trouve dans "BoulderDashProjet"
 
-les fichiers ne peuvent pas être upload un a un du coup je dois mettre le zip désolé.
+Pour les rapports :
+Les fichiers ne peuvent pas être upload un a un du coup je dois mettre le zip désolé.
 Les rapports surefire se trouve dans main -> target -> site
 Alors que le jxr se trouve dans target -> site -> xref
 
