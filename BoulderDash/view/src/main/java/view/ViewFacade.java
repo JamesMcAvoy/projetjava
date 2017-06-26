@@ -1,5 +1,7 @@
 package view;
 
+import javax.swing.JFrame;
+import view.Menu;
 import javax.swing.JOptionPane;
 
 /**

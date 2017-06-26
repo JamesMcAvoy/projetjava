@@ -3,7 +3,7 @@ package model;
 import java.sql.SQLException;
 import java.util.List;
 
-import model.dao.ExampleDAO;
+import model.dao.BoulderDashDAO;
 
 /**
  * <h1>The Class ModelFacade provides a facade of the Model component.</h1>
@@ -26,7 +26,7 @@ public class ModelFacade implements IModel {
      */
     @Override
     public String getLevelById(final int id) throws SQLException {
-        return ExampleDAO.getLevelById(id);
+        return BoulderDashDAO.getLevelById(id);
     }
 
 }

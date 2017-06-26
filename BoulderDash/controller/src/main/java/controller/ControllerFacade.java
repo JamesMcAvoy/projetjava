@@ -1,11 +1,10 @@
 package controller;
 
 import java.sql.SQLException;
-import java.util.List;
 
-import model.Example;
 import model.IModel;
 import view.IView;
+/////////////////
 
 /**
  * <h1>The Class ControllerFacade provides a facade of the Controller component.</h1>
@@ -42,8 +41,16 @@ public class ControllerFacade implements IController {
      *             the SQL exception
      */
     public void start() throws SQLException {
-       String parse = this.getModel().getLevelById(1).toString();
 
+    	try {
+    		String parse = this.getModel().getLevelById(1).toString();
+    		//Parser parser = new Parser(parse);
+    		
+    		this.getView().displayMessage(parse);
+
+    	} catch(SQLException sql) {
+    		sql.printStackTrace();
+    	}
        
     }
 

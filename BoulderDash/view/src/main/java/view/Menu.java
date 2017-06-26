@@ -15,7 +15,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
-public class Menu extends JFrame implements ActionListener{
+public class Menu extends JFrame implements ActionListener {
 	  
 	  private JPanel container = new JPanel();
 	  private JButton Level1 = new JButton("Level 1");
@@ -39,7 +39,7 @@ public class Menu extends JFrame implements ActionListener{
 		    
 		    
 		  JPanel p2 = new JPanel();
-		  JLabel image = new JLabel (new ImageIcon( "/Users/aymeric/desktop/projet/java/boulder_dash_Menu.jpg"));
+		  JLabel image = new JLabel (new ImageIcon( "boulderdash.jpg"));
 		    
 		  p2.add(image);
 		  container.add(p2, BorderLayout.CENTER);
@@ -85,7 +85,7 @@ public class Menu extends JFrame implements ActionListener{
 		    this.setSize(650, 500);
 		    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    this.setLocationRelativeTo(null);
-		    container.setBackground(Color.green);
+		    container.setBackground(Color.GREEN);
 		    this.setVisible(true); 
 	  }
 	  public void Level3(){
@@ -103,7 +103,7 @@ public class Menu extends JFrame implements ActionListener{
 		    this.setSize(650, 500);
 		    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    this.setLocationRelativeTo(null);
-		    container.setBackground(Color.red);
+		    container.setBackground(Color.RED);
 		    this.setVisible(true); 
 	  }
 	  public void Level5(){
@@ -112,7 +112,7 @@ public class Menu extends JFrame implements ActionListener{
 		    this.setSize(650, 500);
 		    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    this.setLocationRelativeTo(null);
-		    container.setBackground(Color.orange);
+		    container.setBackground(Color.ORANGE);
 		    this.setVisible(true); 
 	  }
 	 
@@ -163,8 +163,7 @@ public class Menu extends JFrame implements ActionListener{
 			validate();
 		}
 	}
-
-
+	
 	
 	  
 }
