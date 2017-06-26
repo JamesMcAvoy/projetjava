@@ -1,5 +1,10 @@
 
 # Java project:
+
+les fichiers ne peuvent pas être upload un a un du coup je dois mettre le zip désolé.
+Les rapports surefire se trouve dans main -> target -> site
+Alors que le jxr se trouve dans target -> site -> xref
+
 # -BoulderDash
 
 
